@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:udaskin/address_page.dart';
+import 'package:udaskin/courier_page.dart';
+import 'package:udaskin/payment_page.dart';
+import 'package:udaskin/success_page.dart';
+import 'package:udaskin/voucher_page.dart';
 
 class CheckoutPage extends StatefulWidget {
   const CheckoutPage({super.key});
@@ -122,49 +126,55 @@ class _CheckoutPageState extends State<CheckoutPage> {
               "Courier",
               style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
             ),
-            Container(
-              height: 100,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 0,
-                      blurRadius: 4,
-                      offset: Offset(0, 4), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Row(
-                  children: [
-                    Container(
-                      height: 50,
-                      width: 50,
-                      decoration: BoxDecoration(color: Color.fromRGBO(242, 242, 242, 1),borderRadius: BorderRadius.circular(5)),
-                      child: Image.asset("img/pos_indonesia.png"),
-                    ),
-                    SizedBox(width: 10,),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Pos Indonesia",
-                          style: TextStyle(fontSize: 18),
-                        ),
-                        Text(
-                          "REG - \$50.00 (2 working days)",style: TextStyle(color:Color.fromRGBO(189, 189, 189, 1)),
-                        ),
-                      ],
-                    ),
-                    Spacer(),
-                    Icon(
-                      Icons.chevron_right,
-                      color: Color.fromRGBO(189, 189, 189, 1),
-                    )
-                  ],
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (_) => CourierPage()));
+
+              },
+              child: Container(
+                height: 100,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 0,
+                        blurRadius: 4,
+                        offset: Offset(0, 4), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.white),
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(color: Color.fromRGBO(242, 242, 242, 1),borderRadius: BorderRadius.circular(5)),
+                        child: Image.asset("img/pos_indonesia.png"),
+                      ),
+                      SizedBox(width: 10,),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Pos Indonesia",
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          Text(
+                            "REG - \$50.00 (2 working days)",style: TextStyle(color:Color.fromRGBO(189, 189, 189, 1)),
+                          ),
+                        ],
+                      ),
+                      Spacer(),
+                      Icon(
+                        Icons.chevron_right,
+                        color: Color.fromRGBO(189, 189, 189, 1),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -221,7 +231,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => AddressPage()));
+                      MaterialPageRoute(builder: (_) => SuccessPage()));
                 },
                 color: Colors.black,
                 height: 55,
@@ -231,7 +241,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                   style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

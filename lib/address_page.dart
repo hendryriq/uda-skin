@@ -126,6 +126,20 @@ class _AddressPageState extends State<AddressPage> {
                   ],
                 ),
               ),
+              Spacer(),
+              MaterialButton(
+                child: Text(
+                  "Save",
+                  style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+                ),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(100)
+                ),
+                onPressed: () {},
+                minWidth: double.infinity,
+                height: 60,
+                color: Colors.black,
+              )
             ],
           )),
     );

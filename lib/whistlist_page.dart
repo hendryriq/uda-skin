@@ -61,7 +61,7 @@ class _WhistlistPageState extends State<WhistlistPage> {
                             )
                           ],
                         ),
-                        height: 250,
+                        height: 260,
                         width: 150,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),

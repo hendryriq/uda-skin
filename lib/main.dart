@@ -4,6 +4,7 @@ import 'package:udaskin/home_page.dart';
 import 'package:udaskin/login_page.dart';
 import 'package:udaskin/menu_tab_bar.dart';
 import 'package:udaskin/on_board.dart';
+import 'package:udaskin/voucher_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MenuTabBar(),
+      home: const OnBoard(),
     );
   }
 }

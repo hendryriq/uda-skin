@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:udaskin/address_page.dart';
 import 'package:udaskin/edit_profile_page.dart';
 import 'package:udaskin/order_page.dart';
+import 'package:udaskin/payment_page.dart';
+import 'package:udaskin/voucher_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -92,18 +95,23 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                   Container(
                     padding: EdgeInsets.all(20),
-                    child: Row(
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Icon(Icons.location_on_outlined),
-                        SizedBox(width: 8),
-                        Text("Shipping addresses"),
-                        Spacer(),
-                        Icon(
-                          Icons.chevron_right,
-                          color: Colors.grey,
-                        )
-                      ],
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (_) => AddressPage()));
+                      },
+                      child: Row(
+                        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(Icons.location_on_outlined),
+                          SizedBox(width: 8),
+                          Text("Shipping addresses"),
+                          Spacer(),
+                          Icon(
+                            Icons.chevron_right,
+                            color: Colors.grey,
+                          )
+                        ],
+                      ),
                     ),
                     height: 80,
                     decoration: BoxDecoration(
@@ -116,18 +124,23 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                   Container(
                     padding: EdgeInsets.all(20),
-                    child: Row(
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Icon(Icons.credit_card_outlined),
-                        SizedBox(width: 8),
-                        Text("Payment methodes"),
-                        Spacer(),
-                        Icon(
-                          Icons.chevron_right,
-                          color: Colors.grey,
-                        )
-                      ],
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (_) => PaymentPage()));
+                      },
+                      child: Row(
+                        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(Icons.credit_card_outlined),
+                          SizedBox(width: 8),
+                          Text("Payment methodes"),
+                          Spacer(),
+                          Icon(
+                            Icons.chevron_right,
+                            color: Colors.grey,
+                          )
+                        ],
+                      ),
                     ),
                     height: 80,
                     decoration: BoxDecoration(
@@ -140,18 +153,23 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                   Container(
                     padding: EdgeInsets.all(20),
-                    child: Row(
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Icon(CupertinoIcons.tickets),
-                        SizedBox(width: 8),
-                        Text("My Voucher"),
-                        Spacer(),
-                        Icon(
-                          Icons.chevron_right,
-                          color: Colors.grey,
-                        )
-                      ],
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (_) => VoucherPage()));
+                      },
+                      child: Row(
+                        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(CupertinoIcons.tickets),
+                          SizedBox(width: 8),
+                          Text("My Voucher"),
+                          Spacer(),
+                          Icon(
+                            Icons.chevron_right,
+                            color: Colors.grey,
+                          )
+                        ],
+                      ),
                     ),
                     height: 80,
                     decoration: BoxDecoration(

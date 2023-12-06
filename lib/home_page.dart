@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udaskin/detail_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -48,7 +49,9 @@ class _HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.circular(20)),
                           color: Colors.black,
                           textColor: Colors.white,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage(),));
+                          },
                         )
                       ],
                     ),
