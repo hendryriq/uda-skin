@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:udaskin/detail_chat.dart';
+import 'package:udaskin/chat/detail_chat.dart';
 
 class ChatPage extends StatefulWidget {
   const ChatPage({super.key});

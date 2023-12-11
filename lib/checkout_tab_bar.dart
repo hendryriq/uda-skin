@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:udaskin/checkout_page.dart';
+import 'package:udaskin/cart/checkout_page.dart';
 
 class CheckoutTabBar extends StatefulWidget {
   const CheckoutTabBar({super.key});

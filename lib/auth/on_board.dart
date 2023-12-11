@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:udaskin/login_page.dart';
-import 'package:udaskin/register_page.dart';
+import 'package:udaskin/auth/login_page.dart';
+import 'package:udaskin/auth/register_page.dart';
 
 class OnBoard extends StatefulWidget {
   const OnBoard({super.key});

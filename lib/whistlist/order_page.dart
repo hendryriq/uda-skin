@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:udaskin/whistlist/detail_order.dart';
+import 'package:udaskin/whistlist/rate_page.dart';
 
 class OrderPage extends StatefulWidget {
   const OrderPage({super.key});
@@ -144,11 +146,13 @@ class _OrderPageState extends State<OrderPage> {
                           children: [
                             Spacer(),
                             MaterialButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => RatePage()));
+                              },
                               color: Colors.black,
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                               textColor: Colors.white,
-                              child: Text("Buy Again"),
+                              child: Text("Rate"),
                             ),
                           ],
                         )
@@ -180,13 +184,18 @@ class _OrderPageState extends State<OrderPage> {
                         SizedBox(
                           width: 10,
                         ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("White Ginseng \nPurify Mask"),
-                            SizedBox(width: 10,),
-                            Text("\$120.00")
-                          ],
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (_) => DetailOrder()));
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("White Ginseng \nPurify Mask"),
+                              SizedBox(width: 10,),
+                              Text("\$120.00")
+                            ],
+                          ),
                         ),
                         Spacer(),
                         Column(

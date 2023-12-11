@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:udaskin/address_page.dart';
-import 'package:udaskin/courier_page.dart';
-import 'package:udaskin/payment_page.dart';
-import 'package:udaskin/success_page.dart';
-import 'package:udaskin/voucher_page.dart';
+import 'package:udaskin/cart/address_page.dart';
+import 'package:udaskin/cart/courier_page.dart';
+import 'package:udaskin/cart/detail_payment.dart';
+import 'package:udaskin/cart/payment_page.dart';
+import 'package:udaskin/cart/success_page.dart';
+import 'package:udaskin/cart/voucher_page.dart';
 
 class CheckoutPage extends StatefulWidget {
   const CheckoutPage({super.key});

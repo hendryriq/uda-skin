@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:udaskin/cart_page.dart';
-import 'package:udaskin/chat_page.dart';
-import 'package:udaskin/home_page.dart';
-import 'package:udaskin/profile_page.dart';
-import 'package:udaskin/whistlist_page.dart';
+import 'package:udaskin/cart/cart_page.dart';
+import 'package:udaskin/chat/chat_page.dart';
+import 'package:udaskin/home/home_page.dart';
+import 'package:udaskin/profile/profile_page.dart';
+import 'package:udaskin/whistlist/whistlist_page.dart';
 
 class MenuTabBar extends StatefulWidget {
   const MenuTabBar({super.key});

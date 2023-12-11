@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:udaskin/home_page.dart';
-import 'package:udaskin/menu_tab_bar.dart';
-import 'package:udaskin/register_page.dart';
+import 'package:udaskin/home/home_page.dart';
+import 'package:udaskin/home/menu_tab_bar.dart';
+import 'package:udaskin/auth/register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

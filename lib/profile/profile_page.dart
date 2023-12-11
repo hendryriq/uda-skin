@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:udaskin/address_page.dart';
-import 'package:udaskin/edit_profile_page.dart';
-import 'package:udaskin/order_page.dart';
-import 'package:udaskin/payment_page.dart';
-import 'package:udaskin/voucher_page.dart';
+import 'package:udaskin/cart/address_page.dart';
+import 'package:udaskin/profile/edit_profile_page.dart';
+import 'package:udaskin/whistlist/order_page.dart';
+import 'package:udaskin/cart/payment_page.dart';
+import 'package:udaskin/cart/voucher_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

@@ -172,7 +172,6 @@ class _DetailChatState extends State<DetailChat> {
                   color: Colors.black,
                   child: Icon(Icons.send,color: Colors.white,),
                   onPressed: () {
-                  
                 },)
               ],
             ),
