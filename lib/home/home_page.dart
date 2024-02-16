@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:udaskin/home/detail_page.dart';
+import 'package:udaskin/home/search_list_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -20,7 +21,9 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Colors.white,
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.search), onPressed: () {})
+          IconButton(icon: Icon(Icons.search), onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (_) => SearchListPage()));
+          })
         ],
       ),
       body: SingleChildScrollView(
@@ -290,16 +293,19 @@ class _HomePageState extends State<HomePage> {
 
                         ],
                       ),
-                      SizedBox(height:15),
+                      const SizedBox(height:15),
                       Row(
                         children: [
                           Flexible(
                             child: Container(
                               padding: EdgeInsets.all(20),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: Color.fromRGBO(242, 242, 242, 1)),
                               child: Column(
                                 children: [
                                   Image.asset("img/produk2.png"),
-                                  Column(
+                                  const Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text(
@@ -333,19 +339,19 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ],
                               ),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  color: Color.fromRGBO(242, 242, 242, 1)),
                             ),
                           ),
-                          SizedBox(width: 15),
+                          const SizedBox(width: 15),
                           Flexible(
                             child: Container(
-                              padding: EdgeInsets.all(20),
+                              padding: const EdgeInsets.all(20),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: Color.fromRGBO(242, 242, 242, 1)),
                               child: Column(
                                 children: [
                                   Image.asset("img/produk2.png"),
-                                  Column(
+                                  const Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text(
@@ -379,9 +385,6 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ],
                               ),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  color: Color.fromRGBO(242, 242, 242, 1)),
                             ),
                           ),
 

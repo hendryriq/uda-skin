@@ -16,6 +16,7 @@ class _CartPageState extends State<CartPage> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(250, 250, 250, 1),
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text("Cart"),
       ),
       body: SingleChildScrollView(

@@ -18,6 +18,7 @@ class _WhistlistPageState extends State<WhistlistPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text("Whistlist"),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.search), onPressed: () {})

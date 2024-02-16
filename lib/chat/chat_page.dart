@@ -13,25 +13,29 @@ class _ChatPageState extends State<ChatPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text("Chat"),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.search), onPressed: () {})
-        ],),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
             GestureDetector(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (_)=> DetailChat()));
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (_) => DetailChat()));
               },
               child: Container(
                 padding: EdgeInsets.all(10),
                 width: double.infinity,
                 height: 80,
                 decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
-                  color: Colors.white
-                ),
+                    border: Border(
+                        bottom: BorderSide(
+                            width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
+                    color: Colors.white),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,9 +58,10 @@ class _ChatPageState extends State<ChatPage> {
               width: double.infinity,
               height: 80,
               decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
-                  color: Colors.white
-              ),
+                  border: Border(
+                      bottom: BorderSide(
+                          width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
+                  color: Colors.white),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,9 +83,10 @@ class _ChatPageState extends State<ChatPage> {
               width: double.infinity,
               height: 80,
               decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
-                  color: Colors.white
-              ),
+                  border: Border(
+                      bottom: BorderSide(
+                          width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
+                  color: Colors.white),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -102,9 +108,10 @@ class _ChatPageState extends State<ChatPage> {
               width: double.infinity,
               height: 80,
               decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
-                  color: Colors.white
-              ),
+                  border: Border(
+                      bottom: BorderSide(
+                          width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
+                  color: Colors.white),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -126,9 +133,10 @@ class _ChatPageState extends State<ChatPage> {
               width: double.infinity,
               height: 80,
               decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
-                  color: Colors.white
-              ),
+                  border: Border(
+                      bottom: BorderSide(
+                          width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
+                  color: Colors.white),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -150,9 +158,10 @@ class _ChatPageState extends State<ChatPage> {
               width: double.infinity,
               height: 80,
               decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
-                  color: Colors.white
-              ),
+                  border: Border(
+                      bottom: BorderSide(
+                          width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
+                  color: Colors.white),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -174,9 +183,10 @@ class _ChatPageState extends State<ChatPage> {
               width: double.infinity,
               height: 80,
               decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
-                  color: Colors.white
-              ),
+                  border: Border(
+                      bottom: BorderSide(
+                          width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
+                  color: Colors.white),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -198,9 +208,10 @@ class _ChatPageState extends State<ChatPage> {
               width: double.infinity,
               height: 80,
               decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
-                  color: Colors.white
-              ),
+                  border: Border(
+                      bottom: BorderSide(
+                          width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
+                  color: Colors.white),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -222,9 +233,10 @@ class _ChatPageState extends State<ChatPage> {
               width: double.infinity,
               height: 80,
               decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
-                  color: Colors.white
-              ),
+                  border: Border(
+                      bottom: BorderSide(
+                          width: 1, color: Color.fromRGBO(224, 224, 224, 1))),
+                  color: Colors.white),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -241,7 +253,6 @@ class _ChatPageState extends State<ChatPage> {
                 ],
               ),
             ),
-
           ],
         ),
       ),
